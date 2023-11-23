@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#for github connection and authintication
+github_pro3
+github_pro3.pub 
+
 # C extensions
 *.so
 
