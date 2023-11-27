@@ -4,12 +4,12 @@ services:
       context: .
       dockerfile: dockerfile
     ports:
-      - "8000:8000"
+      - "${PORT}:${PORT}"
     env_file:
       - .env
     depends_on:
       - db
-    command: sh -c "python manage.py runserver 0.0.0.0:8000"
+    command: sh -c "python manage.py runserver ${PORT}"
 
   db:
     image: postgres:13
