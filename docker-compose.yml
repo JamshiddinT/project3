@@ -9,7 +9,7 @@ services:
       - .env
     depends_on:
       - db
-    command: sh -c "python manage.py runserver ${PORT}"
+    command: sh -c "python manage.py runserver 0.0.0.0:${PORT}"
 
   db:
     image: postgres:13
